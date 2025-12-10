@@ -1,0 +1,27 @@
+<style>
+table, th, td {
+  text-align: center;
+}
+</style>
+
+<h3>Talks</h3>
+<ul class="list-group">
+    <li class="list-group-item publist_row">
+        <span class="list-group-item-text" ng-click="showMoreICASSP23b = !showMoreICASSP23b" >
+            <i class="material-icons">duo</i><i class="material-icons">view_carousel</i>
+            Mehrsa Pourya, <strong>  A Continuous-Domain Solution for Computed Tomography with Hessian Total-Variation Regularization </strong>
+            <em>[ISBI2024] IEEE 21th International Symposium on Biomedical Imaging, </em> Athens, Greece, May 2024
+            <i id="morearrow" class="material-icons color-theme">
+                {{showMoreICASSP23b ? 'arrow_downward' : 'arrow_forward'}}
+            </i> </a>
+        </span>
+        <div ng-show="showMoreICASSP23b">
+            <p style="text-align:justify"> <strong>Abstract:</strong> abs </p>
+
+            <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div id="pubButtons">
+                <a class="label label-theme" href="">Poster</a>
+            </div>
+        </div>
+    </li>
+</ul>
