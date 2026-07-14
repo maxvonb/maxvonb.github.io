@@ -1,26 +1,28 @@
+var appVersion = '20260714-1';
+
 angular.module('acadApp', ['ngRoute', 'ui.bootstrap', 'ngResource'])
 
 .config(function($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
-      templateUrl:'html/main.html'
+      templateUrl:'html/main.html?v=' + appVersion
     })
     .when('/pubs', {
       controller:'PubsCtrl',
-      templateUrl:'html/pubs.html'
+      templateUrl:'html/pubs.html?v=' + appVersion
     })
     .when('/bio', {
-      templateUrl:'html/bio.html'
+      templateUrl:'html/bio.html?v=' + appVersion
     })
     .when('/more', {
-      templateUrl:'html/more.html'
+      templateUrl:'html/more.html?v=' + appVersion
     })
     .when('/teaching', {
         controller: 'TeachCtrl',
-      templateUrl:'html/teaching.html'
+      templateUrl:'html/teaching.html?v=' + appVersion
     })
     .when('/talks', {
-      templateUrl:'html/talks.html'
+      templateUrl:'html/talks.html?v=' + appVersion
     })
     .otherwise({
       redirectTo:'html/main.html'
